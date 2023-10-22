@@ -82,6 +82,7 @@ class SignUpView(BaseAPIView):
                     description="User with this email already exists in the system."
                 )
             else:
+                print("Hello")
                 return self.send_response(
                     code=f'500',
                     description=e
